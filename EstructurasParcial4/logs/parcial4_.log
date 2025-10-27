@@ -1,0 +1,10 @@
+2025-10-27 17:24:20 [main] INFO  estructurasparcial4.Service.LeerPerfiles - Leyendo el archivo de perfiles: C:\Users\david\Documents\GitHub\Parcial4Desarrollo\parcial4\app\src\main\resources\Perfiles.json
+2025-10-27 17:24:20 [main] INFO  estructurasparcial4.Service.LeerPerfiles - Archivo de perfiles leído exitosamente. Perfiles encontrados: 13
+2025-10-27 17:24:47 [main] INFO  estructurasparcial4.Service.LeerPerfiles - Leyendo el archivo de perfiles: C:\Users\david\Documents\GitHub\Parcial4Desarrollo\parcial4\app\src\main\resources\Perfiles.json
+2025-10-27 17:24:47 [main] INFO  estructurasparcial4.Service.LeerPerfiles - Archivo de perfiles leído exitosamente. Perfiles encontrados: 13
+2025-10-27 17:26:53 [main] INFO  estructurasparcial4.Service.LeerPerfiles - Leyendo el archivo de perfiles: C:\Users\david\Documents\GitHub\Parcial4Desarrollo\parcial4\app\src\main\resources\Perfiles.json
+2025-10-27 17:26:53 [main] INFO  estructurasparcial4.Service.LeerPerfiles - Archivo de perfiles leído exitosamente. Perfiles encontrados: 13
+2025-10-27 17:27:41 [main] INFO  estructurasparcial4.Service.LeerPerfiles - Leyendo el archivo de perfiles: C:\Users\david\Documents\GitHub\Parcial4Desarrollo\parcial4\app\src\main\resources\Perfiles.json
+2025-10-27 17:27:41 [main] INFO  estructurasparcial4.Service.LeerPerfiles - Archivo de perfiles leído exitosamente. Perfiles encontrados: 13
+2025-10-27 17:28:22 [main] INFO  estructurasparcial4.Service.LeerPerfiles - Leyendo el archivo de perfiles: C:\Users\david\Documents\E.Datos\EstructurasParcial4\app\src\main\resources\Perfiles.json
+2025-10-27 17:28:22 [main] INFO  estructurasparcial4.Service.LeerPerfiles - Archivo de perfiles leído exitosamente. Perfiles encontrados: 13
