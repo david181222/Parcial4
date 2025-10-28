@@ -6,3 +6,8 @@
 2025-10-28 15:27:30 [main] WARN  estructurasparcial4.Service.LeerPerfiles - Inicializando con lista vacía debido al error
 2025-10-28 15:28:52 [main] INFO  estructurasparcial4.Service.LeerPerfiles - Leyendo el archivo de perfiles: C:\Users\diazm\OneDrive\Escritorio\Parcial4\EstructurasParcial4\app\src\main\resources\Perfiles.json
 2025-10-28 15:28:52 [main] INFO  estructurasparcial4.Service.LeerPerfiles - Archivo de perfiles leído exitosamente. Perfiles encontrados: 13
+2025-10-28 15:33:12 [main] INFO  estructurasparcial4.Service.LeerPerfiles - Leyendo el archivo de perfiles: C:\Users\diazm\OneDrive\Escritorio\Parcial4\EstructurasParcial4\app\src\main\resources\Perfiles.json
+2025-10-28 15:33:12 [main] INFO  estructurasparcial4.Service.LeerPerfiles - Archivo de perfiles leído exitosamente. Perfiles encontrados: 13
+2025-10-28 15:33:12 [main] INFO  estructurasparcial4.Service.LeerPerfiles - Perfiles cargados en almacenamiento: 13
+2025-10-28 15:34:39 [main] INFO  estructurasparcial4.Service.LeerPerfiles - Perfiles guardados exitosamente en: C:\Users\diazm\OneDrive\Escritorio\Parcial4\EstructurasParcial4\app\src\main\resources\Perfiles.json
+2025-10-28 15:34:49 [main] INFO  estructurasparcial4.Service.LeerPerfiles - Perfiles guardados exitosamente en: C:\Users\diazm\OneDrive\Escritorio\Parcial4\EstructurasParcial4\app\src\main\resources\Perfiles.json
