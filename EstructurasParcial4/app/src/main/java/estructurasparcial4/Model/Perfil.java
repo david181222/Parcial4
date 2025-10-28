@@ -57,6 +57,7 @@ public class Perfil {
     public Integer obtenerCalidadAmistad(String friendId) {
         return amigosDirectos.get(friendId);
     }
+    
     @Override
     public String toString() {
         return "Perfil{" +

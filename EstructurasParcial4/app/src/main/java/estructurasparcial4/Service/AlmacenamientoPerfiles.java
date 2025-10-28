@@ -41,5 +41,26 @@ public class AlmacenamientoPerfiles {
         return tablaPerfiles;
     }
 
-}
+    // Método para obtener la calidad de amistad entre dos perfiles
+    public Integer obtenerCalidadAmistad(String idPerfilA, String idPerfilB) {
+        if (idPerfilA == null || idPerfilB == null)
+            return null;
 
+        Perfil perfilA = buscarPerfil(idPerfilA);
+        if (perfilA != null) {
+            Integer q = perfilA.obtenerCalidadAmistad(idPerfilB);
+            if (q != null)
+                return q;
+        }
+        
+        Perfil perfilB = buscarPerfil(idPerfilB);
+        if (perfilB != null) {
+            Integer q = perfilB.obtenerCalidadAmistad(idPerfilA);
+            if (q != null)
+                return q;
+        }
+
+        return null;
+    }
+
+}

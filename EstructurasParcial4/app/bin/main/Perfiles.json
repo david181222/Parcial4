@@ -1,0 +1,93 @@
+[
+  {
+    "id": "001",
+    "nombre": "Lionel Messi",
+    "edad": 38,
+    "genero": "Masculino",
+    "amigosDirectos": {}
+  },
+  {
+    "id": "002",
+    "nombre": "Megan Rapinoe",
+    "edad": 40,
+    "genero": "Femenino",
+    "amigosDirectos": {}
+  },
+  {
+    "id": "003",
+    "nombre": "Kylian Mbappé",
+    "edad": 27,
+    "genero": "Masculino",
+    "amigosDirectos": {}
+  },
+  {
+    "id": "004",
+    "nombre": "Sergio Ramos",
+    "edad": 39,
+    "genero": "Masculino",
+    "amigosDirectos": {}
+  },
+  {
+    "id": "005",
+    "nombre": "Alex Morgan",
+    "edad": 36,
+    "genero": "Femenino",
+    "amigosDirectos": {}
+  },
+  {
+    "id": "006",
+    "nombre": "Robert Lewandowski",
+    "edad": 37,
+    "genero": "Masculino",
+    "amigosDirectos": {}
+  },
+  {
+    "id": "007",
+    "nombre": "Marta Vieira da Silva",
+    "edad": 39,
+    "genero": "Femenino",
+    "amigosDirectos": {}
+  },
+  {
+    "id": "008",
+    "nombre": "Virgil van Dijk",
+    "edad": 34,
+    "genero": "Masculino",
+    "amigosDirectos": {}
+  },
+  {
+    "id": "009",
+    "nombre": "Alexia Putellas",
+    "edad": 31,
+    "genero": "Femenino",
+    "amigosDirectos": {}
+  },
+  {
+    "id": "010",
+    "nombre": "Erling Haaland",
+    "edad": 25,
+    "genero": "Masculino",
+    "amigosDirectos": {}
+  },
+  {
+    "id": "013",
+    "nombre": "Ousmane Dembele",
+    "edad": 15,
+    "genero": "Masculino",
+    "amigosDirectos": {}
+  },
+  {
+    "id": "100",
+    "nombre": "Zinedine Zidane",
+    "edad": 53,
+    "genero": "Masculino",
+    "amigosDirectos": {}
+  },
+  {
+    "id": "111",
+    "nombre": "Cristiano Ronaldo",
+    "edad": 41,
+    "genero": "Masculino",
+    "amigosDirectos": {}
+  }
+]
