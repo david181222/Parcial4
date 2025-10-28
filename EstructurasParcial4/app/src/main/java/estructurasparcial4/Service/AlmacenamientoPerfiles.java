@@ -21,16 +21,16 @@ public class AlmacenamientoPerfiles {
         tablaPerfiles.put(perfil.getId(), perfil);
     }
 
-    public Perfil buscarPerfil(String userId) {
-        return tablaPerfiles.get(userId);
+    public Perfil buscarPerfil(String idUsuario) {
+        return tablaPerfiles.get(idUsuario);
     }
 
-    public boolean existePerfil(String userId) {
-        return tablaPerfiles.containsKey(userId);
+    public boolean existePerfil(String idUsuario) {
+        return tablaPerfiles.containsKey(idUsuario);
     }
 
-    public void eliminarPerfil(String userId) {
-        tablaPerfiles.remove(userId);
+    public void eliminarPerfil(String idUsuario) {
+        tablaPerfiles.remove(idUsuario);
     }
 
     public int obtenerTotalPerfiles() {

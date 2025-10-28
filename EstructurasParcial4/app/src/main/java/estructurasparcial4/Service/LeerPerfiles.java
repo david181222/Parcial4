@@ -21,7 +21,7 @@ public class LeerPerfiles {
     // Clase encargada de leer y escribir el archivo JSON de perfiles.
     // Se usa para cargar perfiles al inicio y guardarlos cuando cambian.
     private final Gson gson;
-    private static final String RUTA_ARCHIVO = "C:\\Users\\david\\Documents\\E.Datos\\EstructurasParcial4\\app\\src\\main\\resources\\Perfiles.json";
+    private static final String RUTA_ARCHIVO = "C:\\Users\\diazm\\OneDrive\\Escritorio\\Parcial4\\EstructurasParcial4\\app\\src\\main\\resources\\Perfiles.json";
     private List<Perfil> perfilesCargados;
     private boolean archivoLeido;
     private static final Logger logger = LogManager.getLogger(LeerPerfiles.class);
@@ -37,11 +37,11 @@ public class LeerPerfiles {
     public void leerArchivo() {
         if (archivoLeido) return;
 
-        try (FileReader fileReader = new FileReader(RUTA_ARCHIVO)) {
+        try (FileReader lectorArchivo = new FileReader(RUTA_ARCHIVO)) {
             logger.info("Leyendo el archivo de perfiles: {}", RUTA_ARCHIVO);
 
-            Type listType = new TypeToken<List<Perfil>>() {}.getType();
-            List<Perfil> perfilesLeidos = gson.fromJson(fileReader, listType);
+            Type tipoLista = new TypeToken<List<Perfil>>() {}.getType();
+            List<Perfil> perfilesLeidos = gson.fromJson(lectorArchivo, tipoLista);
             
             if (perfilesLeidos != null) {
                 perfilesCargados = perfilesLeidos;
@@ -89,9 +89,9 @@ public class LeerPerfiles {
 
     // Guarda todos los perfiles del almacenamiento en el archivo JSON.
     public void guardarPerfiles(AlmacenamientoPerfiles almacenamiento) {
-        try (FileWriter fileWriter = new FileWriter(RUTA_ARCHIVO)) {
+        try (FileWriter escritorArchivo = new FileWriter(RUTA_ARCHIVO)) {
             List<Perfil> todosPerfiles = new ArrayList<>(almacenamiento.obtenerTodosPerfiles().values());
-            gson.toJson(todosPerfiles, fileWriter);
+            gson.toJson(todosPerfiles, escritorArchivo);
             logger.info("Perfiles guardados exitosamente en: {}", RUTA_ARCHIVO);
         } catch (IOException e) {
             logger.error("Error al guardar perfiles: {}", e.getMessage());

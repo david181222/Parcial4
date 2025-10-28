@@ -1,0 +1,8 @@
+2025-10-28 14:48:03 [main] ERROR estructurasparcial4.Service.LeerPerfiles - Error al leer el archivo: C:\Users\david\Documents\E.Datos\EstructurasParcial4\app\src\main\resources\Perfiles.json (The system cannot find the path specified)
+2025-10-28 14:48:03 [main] WARN  estructurasparcial4.Service.LeerPerfiles - Inicializando con lista vacía debido al error
+2025-10-28 15:27:01 [main] ERROR estructurasparcial4.Service.LeerPerfiles - Error al leer el archivo: C:\Users\david\Documents\E.Datos\EstructurasParcial4\app\src\main\resources\Perfiles.json (The system cannot find the path specified)
+2025-10-28 15:27:01 [main] WARN  estructurasparcial4.Service.LeerPerfiles - Inicializando con lista vacía debido al error
+2025-10-28 15:27:30 [main] ERROR estructurasparcial4.Service.LeerPerfiles - Error al leer el archivo: C:\Users\david\Documents\E.Datos\EstructurasParcial4\app\src\main\resources\Perfiles.json (The system cannot find the path specified)
+2025-10-28 15:27:30 [main] WARN  estructurasparcial4.Service.LeerPerfiles - Inicializando con lista vacía debido al error
+2025-10-28 15:28:52 [main] INFO  estructurasparcial4.Service.LeerPerfiles - Leyendo el archivo de perfiles: C:\Users\diazm\OneDrive\Escritorio\Parcial4\EstructurasParcial4\app\src\main\resources\Perfiles.json
+2025-10-28 15:28:52 [main] INFO  estructurasparcial4.Service.LeerPerfiles - Archivo de perfiles leído exitosamente. Perfiles encontrados: 13

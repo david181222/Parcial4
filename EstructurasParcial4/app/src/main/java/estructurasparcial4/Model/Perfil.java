@@ -39,23 +39,23 @@ public class Perfil {
         return amigosDirectos;
     }
 
-    public boolean esAmigo(String friendId) {
-        return amigosDirectos.containsKey(friendId);
+    public boolean esAmigo(String idAmigo) {
+        return amigosDirectos.containsKey(idAmigo);
     }
 
-    public void agregarAmigo(String friendId, int calidadAmistad) {
+    public void agregarAmigo(String idAmigo, int calidadAmistad) {
         if (calidadAmistad < 1 || calidadAmistad > 5) {
             throw new IllegalArgumentException("Calidad debe estar entre 1 y 5");
         }
-        amigosDirectos.put(friendId, calidadAmistad);
+        amigosDirectos.put(idAmigo, calidadAmistad);
     }
 
-    public void eliminarAmigo(String friendId) {
-        amigosDirectos.remove(friendId);
+    public void eliminarAmigo(String idAmigo) {
+        amigosDirectos.remove(idAmigo);
     }
 
-    public Integer obtenerCalidadAmistad(String friendId) {
-        return amigosDirectos.get(friendId);
+    public Integer obtenerCalidadAmistad(String idAmigo) {
+        return amigosDirectos.get(idAmigo);
     }
     
     @Override
