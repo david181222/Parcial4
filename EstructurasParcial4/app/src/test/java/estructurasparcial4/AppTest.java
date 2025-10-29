@@ -4,9 +4,542 @@
 package estructurasparcial4;
 
 import org.junit.jupiter.api.Test;
+import org.junit.jupiter.api.BeforeEach;
+import org.junit.jupiter.api.DisplayName;
 import static org.junit.jupiter.api.Assertions.*;
 
+import estructurasparcial4.Model.Perfil;
+import estructurasparcial4.Model.SugerenciaAmigo;
+import estructurasparcial4.Service.AlmacenamientoPerfiles;
+import estructurasparcial4.Service.MotorSugerencias;
+import estructurasparcial4.Util.WeightedQuickUnionUF;
+
+import java.util.List;
+import java.util.HashMap;
+
+// Se le pidió a la IA la generación de pruebas unitarias que validaran el comportamiento esencial de la aplicación
 class AppTest {
     
-   
+    private AlmacenamientoPerfiles almacenamiento;
+    private MotorSugerencias motorSugerencias;
+    private WeightedQuickUnionUF redSocial;
+    
+    @BeforeEach
+    void setUp() {
+        almacenamiento = new AlmacenamientoPerfiles();
+        motorSugerencias = new MotorSugerencias(almacenamiento);
+        redSocial = new WeightedQuickUnionUF(100);
+    }
+    
+    // ==================== PRUEBAS DE PERFIL ====================
+    
+    @Test
+    @DisplayName("Crear perfil válido")
+    void testCrearPerfilValido() {
+        Perfil perfil = new Perfil("user1", "Juan Pérez", (short) 25, "M");
+        
+        assertNotNull(perfil);
+        assertEquals("user1", perfil.getId());
+        assertEquals("Juan Pérez", perfil.getNombre());
+        assertEquals(25, perfil.getEdad());
+        assertEquals("M", perfil.getGenero());
+        assertNotNull(perfil.getAmigosDirectos());
+        assertTrue(perfil.getAmigosDirectos().isEmpty());
+    }
+    
+    @Test
+    @DisplayName("Agregar amigo a perfil con calidad válida")
+    void testAgregarAmigoValido() {
+        Perfil perfil = new Perfil("user1", "Juan Pérez", (short) 25, "M");
+        perfil.agregarAmigo("user2", 5);
+        
+        assertTrue(perfil.esAmigo("user2"));
+        assertEquals(5, perfil.obtenerCalidadAmistad("user2"));
+    }
+    
+    @Test
+    @DisplayName("Agregar amigo con calidad inválida debe lanzar excepción")
+    void testAgregarAmigoCalidadInvalida() {
+        Perfil perfil = new Perfil("user1", "Juan Pérez", (short) 25, "M");
+        
+        assertThrows(IllegalArgumentException.class, () -> {
+            perfil.agregarAmigo("user2", 6);
+        });
+        
+        assertThrows(IllegalArgumentException.class, () -> {
+            perfil.agregarAmigo("user3", 0);
+        });
+    }
+    
+    @Test
+    @DisplayName("Eliminar amigo de perfil")
+    void testEliminarAmigo() {
+        Perfil perfil = new Perfil("user1", "Juan Pérez", (short) 25, "M");
+        perfil.agregarAmigo("user2", 4);
+        assertTrue(perfil.esAmigo("user2"));
+        
+        perfil.eliminarAmigo("user2");
+        assertFalse(perfil.esAmigo("user2"));
+    }
+    
+    @Test
+    @DisplayName("Verificar si es amigo")
+    void testEsAmigo() {
+        Perfil perfil = new Perfil("user1", "Juan Pérez", (short) 25, "M");
+        perfil.agregarAmigo("user2", 3);
+        
+        assertTrue(perfil.esAmigo("user2"));
+        assertFalse(perfil.esAmigo("user3"));
+    }
+    
+    // ==================== PRUEBAS DE SUGERENCIA AMIGO ====================
+    
+    @Test
+    @DisplayName("Crear sugerencia amigo válida")
+    void testCrearSugerenciaAmigoValida() {
+        Perfil perfil = new Perfil("user1", "Ana López", (short) 30, "F");
+        SugerenciaAmigo sugerencia = new SugerenciaAmigo("user1", 4, perfil);
+        
+        assertNotNull(sugerencia);
+        assertEquals("user1", sugerencia.getUserIdSugerido());
+        assertEquals(4, sugerencia.getPrioridad());
+        assertEquals(perfil, sugerencia.getPerfil());
+    }
+    
+    @Test
+    @DisplayName("Crear sugerencia con ID nulo debe lanzar excepción")
+    void testSugerenciaIdNulo() {
+        Perfil perfil = new Perfil("user1", "Ana López", (short) 30, "F");
+        
+        assertThrows(IllegalArgumentException.class, () -> {
+            new SugerenciaAmigo(null, 4, perfil);
+        });
+    }
+    
+    @Test
+    @DisplayName("Crear sugerencia con ID vacío debe lanzar excepción")
+    void testSugerenciaIdVacio() {
+        Perfil perfil = new Perfil("user1", "Ana López", (short) 30, "F");
+        
+        assertThrows(IllegalArgumentException.class, () -> {
+            new SugerenciaAmigo("", 4, perfil);
+        });
+    }
+    
+    @Test
+    @DisplayName("Crear sugerencia con prioridad inválida debe lanzar excepción")
+    void testSugerenciaPrioridadInvalida() {
+        Perfil perfil = new Perfil("user1", "Ana López", (short) 30, "F");
+        
+        assertThrows(IllegalArgumentException.class, () -> {
+            new SugerenciaAmigo("user1", 0, perfil);
+        });
+        
+        assertThrows(IllegalArgumentException.class, () -> {
+            new SugerenciaAmigo("user1", 6, perfil);
+        });
+    }
+    
+    @Test
+    @DisplayName("Crear sugerencia con perfil nulo debe lanzar excepción")
+    void testSugerenciaPerfilNulo() {
+        assertThrows(IllegalArgumentException.class, () -> {
+            new SugerenciaAmigo("user1", 4, null);
+        });
+    }
+    
+    @Test
+    @DisplayName("Comparar sugerencias por prioridad")
+    void testCompararSugerencias() {
+        Perfil perfil1 = new Perfil("user1", "Ana López", (short) 30, "F");
+        Perfil perfil2 = new Perfil("user2", "Carlos Ruiz", (short) 28, "M");
+        
+        SugerenciaAmigo sugerencia1 = new SugerenciaAmigo("user1", 5, perfil1);
+        SugerenciaAmigo sugerencia2 = new SugerenciaAmigo("user2", 3, perfil2);
+        
+        assertTrue(sugerencia1.compareTo(sugerencia2) < 0); // Mayor prioridad primero
+    }
+    
+    // ==================== PRUEBAS DE ALMACENAMIENTO PERFILES ====================
+    
+    @Test
+    @DisplayName("Crear perfil en almacenamiento")
+    void testAlmacenamientoCrearPerfil() {
+        Perfil perfil = new Perfil("user1", "Juan Pérez", (short) 25, "M");
+        almacenamiento.crearPerfil(perfil);
+        
+        assertTrue(almacenamiento.existePerfil("user1"));
+        assertEquals(1, almacenamiento.obtenerTotalPerfiles());
+    }
+    
+    @Test
+    @DisplayName("Crear perfil nulo debe lanzar excepción")
+    void testAlmacenamientoCrearPerfilNulo() {
+        assertThrows(IllegalArgumentException.class, () -> {
+            almacenamiento.crearPerfil(null);
+        });
+    }
+    
+    @Test
+    @DisplayName("Crear perfil duplicado debe lanzar excepción")
+    void testAlmacenamientoPerfilDuplicado() {
+        Perfil perfil1 = new Perfil("user1", "Juan Pérez", (short) 25, "M");
+        Perfil perfil2 = new Perfil("user1", "María García", (short) 30, "F");
+        
+        almacenamiento.crearPerfil(perfil1);
+        
+        assertThrows(IllegalArgumentException.class, () -> {
+            almacenamiento.crearPerfil(perfil2);
+        });
+    }
+    
+    @Test
+    @DisplayName("Buscar perfil existente")
+    void testAlmacenamientoBuscarPerfilExistente() {
+        Perfil perfil = new Perfil("user1", "Juan Pérez", (short) 25, "M");
+        almacenamiento.crearPerfil(perfil);
+        
+        Perfil encontrado = almacenamiento.buscarPerfil("user1");
+        assertNotNull(encontrado);
+        assertEquals("Juan Pérez", encontrado.getNombre());
+    }
+    
+    @Test
+    @DisplayName("Buscar perfil inexistente")
+    void testAlmacenamientoBuscarPerfilInexistente() {
+        Perfil encontrado = almacenamiento.buscarPerfil("user999");
+        assertNull(encontrado);
+    }
+    
+    @Test
+    @DisplayName("Eliminar perfil existente")
+    void testAlmacenamientoEliminarPerfil() {
+        Perfil perfil = new Perfil("user1", "Juan Pérez", (short) 25, "M");
+        almacenamiento.crearPerfil(perfil);
+        assertTrue(almacenamiento.existePerfil("user1"));
+        
+        almacenamiento.eliminarPerfil("user1");
+        assertFalse(almacenamiento.existePerfil("user1"));
+    }
+    
+    @Test
+    @DisplayName("Obtener total de perfiles")
+    void testAlmacenamientoTotalPerfiles() {
+        assertEquals(0, almacenamiento.obtenerTotalPerfiles());
+        
+        almacenamiento.crearPerfil(new Perfil("user1", "Juan", (short) 25, "M"));
+        almacenamiento.crearPerfil(new Perfil("user2", "Ana", (short) 30, "F"));
+        almacenamiento.crearPerfil(new Perfil("user3", "Carlos", (short) 28, "M"));
+        
+        assertEquals(3, almacenamiento.obtenerTotalPerfiles());
+    }
+    
+    @Test
+    @DisplayName("Obtener calidad de amistad entre perfiles")
+    void testAlmacenamientoObtenerCalidadAmistad() {
+        Perfil perfil1 = new Perfil("user1", "Juan", (short) 25, "M");
+        Perfil perfil2 = new Perfil("user2", "Ana", (short) 30, "F");
+        
+        perfil1.agregarAmigo("user2", 4);
+        
+        almacenamiento.crearPerfil(perfil1);
+        almacenamiento.crearPerfil(perfil2);
+        
+        Integer calidad = almacenamiento.obtenerCalidadAmistad("user1", "user2");
+        assertEquals(4, calidad);
+    }
+    
+    @Test
+    @DisplayName("Obtener todos los perfiles")
+    void testAlmacenamientoObtenerTodosPerfiles() {
+        almacenamiento.crearPerfil(new Perfil("user1", "Juan", (short) 25, "M"));
+        almacenamiento.crearPerfil(new Perfil("user2", "Ana", (short) 30, "F"));
+        
+        HashMap<String, Perfil> perfiles = almacenamiento.obtenerTodosPerfiles();
+        assertEquals(2, perfiles.size());
+        assertTrue(perfiles.containsKey("user1"));
+        assertTrue(perfiles.containsKey("user2"));
+    }
+    
+    // ==================== PRUEBAS DE MOTOR SUGERENCIAS ====================
+    
+    @Test
+    @DisplayName("Crear MotorSugerencias con almacenamiento nulo debe lanzar excepción")
+    void testMotorSugerenciasAlmacenamientoNulo() {
+        assertThrows(IllegalArgumentException.class, () -> {
+            new MotorSugerencias(null);
+        });
+    }
+    
+    @Test
+    @DisplayName("Generar amistad entre dos usuarios")
+    void testGenerarAmistad() {
+        Perfil perfil1 = new Perfil("user1", "Juan", (short) 25, "M");
+        Perfil perfil2 = new Perfil("user2", "Ana", (short) 30, "F");
+        
+        almacenamiento.crearPerfil(perfil1);
+        almacenamiento.crearPerfil(perfil2);
+        
+        motorSugerencias.generarAmistad("user1", "user2", 5);
+        
+        assertTrue(perfil1.esAmigo("user2"));
+        assertTrue(perfil2.esAmigo("user1"));
+        assertEquals(5, perfil1.obtenerCalidadAmistad("user2"));
+        assertEquals(5, perfil2.obtenerCalidadAmistad("user1"));
+    }
+    
+    @Test
+    @DisplayName("Generar amistad con usuario inexistente debe lanzar excepción")
+    void testGenerarAmistadUsuarioInexistente() {
+        Perfil perfil1 = new Perfil("user1", "Juan", (short) 25, "M");
+        almacenamiento.crearPerfil(perfil1);
+        
+        assertThrows(IllegalArgumentException.class, () -> {
+            motorSugerencias.generarAmistad("user1", "user999", 5);
+        });
+    }
+    
+    @Test
+    @DisplayName("Generar amistad con calidad inválida debe lanzar excepción")
+    void testGenerarAmistadCalidadInvalida() {
+        Perfil perfil1 = new Perfil("user1", "Juan", (short) 25, "M");
+        Perfil perfil2 = new Perfil("user2", "Ana", (short) 30, "F");
+        
+        almacenamiento.crearPerfil(perfil1);
+        almacenamiento.crearPerfil(perfil2);
+        
+        assertThrows(IllegalArgumentException.class, () -> {
+            motorSugerencias.generarAmistad("user1", "user2", 0);
+        });
+        
+        assertThrows(IllegalArgumentException.class, () -> {
+            motorSugerencias.generarAmistad("user1", "user2", 6);
+        });
+    }
+    
+    @Test
+    @DisplayName("Generar amistad consigo mismo debe lanzar excepción")
+    void testGenerarAmistadConsigoMismo() {
+        Perfil perfil1 = new Perfil("user1", "Juan", (short) 25, "M");
+        almacenamiento.crearPerfil(perfil1);
+        
+        assertThrows(IllegalArgumentException.class, () -> {
+            motorSugerencias.generarAmistad("user1", "user1", 5);
+        });
+    }
+    
+    @Test
+    @DisplayName("Generar amistad con IDs nulos o vacíos debe lanzar excepción")
+    void testGenerarAmistadIdsInvalidos() {
+        Perfil perfil1 = new Perfil("user1", "Juan", (short) 25, "M");
+        almacenamiento.crearPerfil(perfil1);
+        
+        assertThrows(IllegalArgumentException.class, () -> {
+            motorSugerencias.generarAmistad(null, "user1", 5);
+        });
+        
+        assertThrows(IllegalArgumentException.class, () -> {
+            motorSugerencias.generarAmistad("user1", "", 5);
+        });
+    }
+    
+    @Test
+    @DisplayName("Sugerir amigos para usuario sin amigos")
+    void testSugerirAmigosSinAmigos() {
+        Perfil perfil1 = new Perfil("user1", "Juan", (short) 25, "M");
+        almacenamiento.crearPerfil(perfil1);
+        
+        List<SugerenciaAmigo> sugerencias = motorSugerencias.sugerirAmigos("user1");
+        
+        assertNotNull(sugerencias);
+        assertTrue(sugerencias.isEmpty());
+    }
+    
+    @Test
+    @DisplayName("Sugerir amigos - caso básico")
+    void testSugerirAmigosCasoBasico() {
+        // Crear perfiles
+        Perfil perfil1 = new Perfil("user1", "Juan", (short) 25, "M");
+        Perfil perfil2 = new Perfil("user2", "Ana", (short) 30, "F");
+        Perfil perfil3 = new Perfil("user3", "Carlos", (short) 28, "M");
+        
+        almacenamiento.crearPerfil(perfil1);
+        almacenamiento.crearPerfil(perfil2);
+        almacenamiento.crearPerfil(perfil3);
+        
+        // user1 es amigo de user2 con calidad 5
+        motorSugerencias.generarAmistad("user1", "user2", 5);
+        
+        // user2 es amigo de user3 con calidad 4
+        motorSugerencias.generarAmistad("user2", "user3", 4);
+        
+        // Sugerir amigos para user1 debe incluir a user3
+        List<SugerenciaAmigo> sugerencias = motorSugerencias.sugerirAmigos("user1");
+        
+        assertNotNull(sugerencias);
+        assertEquals(1, sugerencias.size());
+        assertEquals("user3", sugerencias.get(0).getUserIdSugerido());
+        assertEquals(5, sugerencias.get(0).getPrioridad()); // Prioridad basada en calidad con user2
+    }
+    
+    @Test
+    @DisplayName("Sugerir amigos con múltiples candidatos ordenados por prioridad")
+    void testSugerirAmigosMultiplesCandidatos() {
+        // Crear perfiles
+        Perfil perfil1 = new Perfil("user1", "Juan", (short) 25, "M");
+        Perfil perfil2 = new Perfil("user2", "Ana", (short) 30, "F");
+        Perfil perfil3 = new Perfil("user3", "Carlos", (short) 28, "M");
+        Perfil perfil4 = new Perfil("user4", "Laura", (short) 27, "F");
+        Perfil perfil5 = new Perfil("user5", "Pedro", (short) 32, "M");
+        
+        almacenamiento.crearPerfil(perfil1);
+        almacenamiento.crearPerfil(perfil2);
+        almacenamiento.crearPerfil(perfil3);
+        almacenamiento.crearPerfil(perfil4);
+        almacenamiento.crearPerfil(perfil5);
+        
+        // user1 amigos directos
+        motorSugerencias.generarAmistad("user1", "user2", 5);
+        motorSugerencias.generarAmistad("user1", "user3", 3);
+        
+        // user2 amigos
+        motorSugerencias.generarAmistad("user2", "user4", 4);
+        
+        // user3 amigos
+        motorSugerencias.generarAmistad("user3", "user5", 2);
+        
+        // Sugerir amigos para user1
+        List<SugerenciaAmigo> sugerencias = motorSugerencias.sugerirAmigos("user1");
+        
+        assertNotNull(sugerencias);
+        assertEquals(2, sugerencias.size());
+        
+        // Debe estar ordenado por prioridad (mayor primero)
+        assertEquals("user4", sugerencias.get(0).getUserIdSugerido());
+        assertEquals(5, sugerencias.get(0).getPrioridad());
+        
+        assertEquals("user5", sugerencias.get(1).getUserIdSugerido());
+        assertEquals(3, sugerencias.get(1).getPrioridad());
+    }
+    
+    @Test
+    @DisplayName("Sugerir amigos para usuario inexistente debe lanzar excepción")
+    void testSugerirAmigosUsuarioInexistente() {
+        assertThrows(IllegalArgumentException.class, () -> {
+            motorSugerencias.sugerirAmigos("user999");
+        });
+    }
+    
+    @Test
+    @DisplayName("Sugerir amigos con ID nulo debe lanzar excepción")
+    void testSugerirAmigosIdNulo() {
+        assertThrows(IllegalArgumentException.class, () -> {
+            motorSugerencias.sugerirAmigos(null);
+        });
+    }
+    
+    @Test
+    @DisplayName("Sugerir amigos con ID vacío debe lanzar excepción")
+    void testSugerirAmigosIdVacio() {
+        assertThrows(IllegalArgumentException.class, () -> {
+            motorSugerencias.sugerirAmigos("");
+        });
+    }
+    
+    @Test
+    @DisplayName("Cargar lazos desde perfiles a red social")
+    void testCargarLazosDesdePerfiles() {
+        // Crear perfiles
+        Perfil perfil1 = new Perfil("user1", "Juan", (short) 25, "M");
+        Perfil perfil2 = new Perfil("user2", "Ana", (short) 30, "F");
+        Perfil perfil3 = new Perfil("user3", "Carlos", (short) 28, "M");
+        
+        almacenamiento.crearPerfil(perfil1);
+        almacenamiento.crearPerfil(perfil2);
+        almacenamiento.crearPerfil(perfil3);
+        
+        // Agregar usuarios a red social
+        redSocial.agregarUsuario("user1");
+        redSocial.agregarUsuario("user2");
+        redSocial.agregarUsuario("user3");
+        
+        // Crear amistades
+        motorSugerencias.generarAmistad("user1", "user2", 5);
+        motorSugerencias.generarAmistad("user2", "user3", 4);
+        
+        // Cargar lazos
+        String resultado = motorSugerencias.cargarLazosDesdePerfiles(redSocial);
+        
+        assertNotNull(resultado);
+        assertTrue(resultado.contains("Lazos de amistad cargados: 2"));
+        
+        // Verificar conexiones
+        assertTrue(redSocial.conectados("user1", "user2"));
+        assertTrue(redSocial.conectados("user2", "user3"));
+    }
+    
+    @Test
+    @DisplayName("Cargar lazos con red social nula debe lanzar excepción")
+    void testCargarLazosRedSocialNula() {
+        assertThrows(IllegalArgumentException.class, () -> {
+            motorSugerencias.cargarLazosDesdePerfiles(null);
+        });
+    }
+    
+    // ==================== PRUEBAS DE WEIGHTED QUICK UNION ====================
+    
+    @Test
+    @DisplayName("Crear WeightedQuickUnionUF")
+    void testCrearWeightedQuickUnionUF() {
+        WeightedQuickUnionUF uf = new WeightedQuickUnionUF(10);
+        assertNotNull(uf);
+    }
+    
+    @Test
+    @DisplayName("Agregar usuario a red social")
+    void testAgregarUsuario() {
+        redSocial.agregarUsuario("user1");
+        redSocial.agregarUsuario("user2");
+        
+        // Los usuarios están agregados pero no conectados
+        assertFalse(redSocial.conectados("user1", "user2"));
+    }
+    
+    @Test
+    @DisplayName("Generar amistad en red social")
+    void testGenerarAmistadRedSocial() {
+        redSocial.agregarUsuario("user1");
+        redSocial.agregarUsuario("user2");
+        
+        redSocial.generarAmistad("user1", "user2", 5);
+        
+        assertTrue(redSocial.conectados("user1", "user2"));
+    }
+    
+    @Test
+    @DisplayName("Usuarios conectados en la misma componente")
+    void testUsuariosConectados() {
+        redSocial.agregarUsuario("user1");
+        redSocial.agregarUsuario("user2");
+        redSocial.agregarUsuario("user3");
+        
+        redSocial.generarAmistad("user1", "user2", 5);
+        redSocial.generarAmistad("user2", "user3", 4);
+        
+        // user1 y user3 están conectados a través de user2
+        assertTrue(redSocial.conectados("user1", "user3"));
+    }
+    
+    @Test
+    @DisplayName("Usuarios no conectados")
+    void testUsuariosNoConectados() {
+        redSocial.agregarUsuario("user1");
+        redSocial.agregarUsuario("user2");
+        redSocial.agregarUsuario("user3");
+        
+        redSocial.generarAmistad("user1", "user2", 5);
+        
+        // user1 y user3 no están conectados
+        assertFalse(redSocial.conectados("user1", "user3"));
+    }
 }

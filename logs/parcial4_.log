@@ -1,13 +1,414 @@
-2025-10-28 14:48:03 [main] ERROR estructurasparcial4.Service.LeerPerfiles - Error al leer el archivo: C:\Users\david\Documents\E.Datos\EstructurasParcial4\app\src\main\resources\Perfiles.json (The system cannot find the path specified)
-2025-10-28 14:48:03 [main] WARN  estructurasparcial4.Service.LeerPerfiles - Inicializando con lista vacía debido al error
-2025-10-28 15:27:01 [main] ERROR estructurasparcial4.Service.LeerPerfiles - Error al leer el archivo: C:\Users\david\Documents\E.Datos\EstructurasParcial4\app\src\main\resources\Perfiles.json (The system cannot find the path specified)
-2025-10-28 15:27:01 [main] WARN  estructurasparcial4.Service.LeerPerfiles - Inicializando con lista vacía debido al error
-2025-10-28 15:27:30 [main] ERROR estructurasparcial4.Service.LeerPerfiles - Error al leer el archivo: C:\Users\david\Documents\E.Datos\EstructurasParcial4\app\src\main\resources\Perfiles.json (The system cannot find the path specified)
-2025-10-28 15:27:30 [main] WARN  estructurasparcial4.Service.LeerPerfiles - Inicializando con lista vacía debido al error
-2025-10-28 15:28:52 [main] INFO  estructurasparcial4.Service.LeerPerfiles - Leyendo el archivo de perfiles: C:\Users\diazm\OneDrive\Escritorio\Parcial4\EstructurasParcial4\app\src\main\resources\Perfiles.json
-2025-10-28 15:28:52 [main] INFO  estructurasparcial4.Service.LeerPerfiles - Archivo de perfiles leído exitosamente. Perfiles encontrados: 13
-2025-10-28 15:33:12 [main] INFO  estructurasparcial4.Service.LeerPerfiles - Leyendo el archivo de perfiles: C:\Users\diazm\OneDrive\Escritorio\Parcial4\EstructurasParcial4\app\src\main\resources\Perfiles.json
-2025-10-28 15:33:12 [main] INFO  estructurasparcial4.Service.LeerPerfiles - Archivo de perfiles leído exitosamente. Perfiles encontrados: 13
-2025-10-28 15:33:12 [main] INFO  estructurasparcial4.Service.LeerPerfiles - Perfiles cargados en almacenamiento: 13
-2025-10-28 15:34:39 [main] INFO  estructurasparcial4.Service.LeerPerfiles - Perfiles guardados exitosamente en: C:\Users\diazm\OneDrive\Escritorio\Parcial4\EstructurasParcial4\app\src\main\resources\Perfiles.json
-2025-10-28 15:34:49 [main] INFO  estructurasparcial4.Service.LeerPerfiles - Perfiles guardados exitosamente en: C:\Users\diazm\OneDrive\Escritorio\Parcial4\EstructurasParcial4\app\src\main\resources\Perfiles.json
+2025-10-29 08:23:16 [main] INFO  estructurasparcial4.App - Iniciando aplicación de Red Social
+2025-10-29 08:23:16 [main] INFO  estructurasparcial4.Service.AlmacenamientoPerfiles - Inicializando AlmacenamientoPerfiles
+2025-10-29 08:23:16 [main] INFO  estructurasparcial4.Service.AlmacenamientoPerfiles - AlmacenamientoPerfiles inicializado
+2025-10-29 08:23:16 [main] INFO  estructurasparcial4.Service.MotorSugerencias - Inicializando MotorSugerencias
+2025-10-29 08:23:16 [main] INFO  estructurasparcial4.Service.MotorSugerencias - MotorSugerencias inicializado
+2025-10-29 08:23:16 [main] ERROR estructurasparcial4.Service.LeerPerfiles - Error al leer el archivo: C:\Users\diazm\OneDrive\Escritorio\Parcial4\EstructurasParcial4\app\src\main\resources\Perfiles.json (El sistema no puede encontrar la ruta especificada)
+2025-10-29 08:23:16 [main] WARN  estructurasparcial4.Service.LeerPerfiles - Inicializando con lista vacía debido al error
+2025-10-29 08:23:16 [main] INFO  estructurasparcial4.Service.LeerPerfiles - No hay perfiles para cargar desde el archivo
+2025-10-29 08:23:16 [main] INFO  estructurasparcial4.Service.AlmacenamientoPerfiles - Obteniendo todos los perfiles
+2025-10-29 08:23:16 [main] INFO  estructurasparcial4.Service.AlmacenamientoPerfiles - Total de perfiles retornados: 0
+2025-10-29 08:23:16 [main] INFO  estructurasparcial4.Service.MotorSugerencias - Cargando lazos desde perfiles a la red social
+2025-10-29 08:23:16 [main] INFO  estructurasparcial4.Service.AlmacenamientoPerfiles - Obteniendo todos los perfiles
+2025-10-29 08:23:16 [main] INFO  estructurasparcial4.Service.AlmacenamientoPerfiles - Total de perfiles retornados: 0
+2025-10-29 08:23:16 [main] INFO  estructurasparcial4.Service.MotorSugerencias - Lazos cargados exitosamente: 0
+2025-10-29 08:23:16 [main] INFO  estructurasparcial4.Service.AlmacenamientoPerfiles - Obteniendo total de perfiles
+2025-10-29 08:23:16 [main] INFO  estructurasparcial4.Service.AlmacenamientoPerfiles - Total de perfiles: 0
+2025-10-29 08:23:16 [main] INFO  estructurasparcial4.Service.AlmacenamientoPerfiles - Obteniendo total de perfiles
+2025-10-29 08:23:16 [main] INFO  estructurasparcial4.Service.AlmacenamientoPerfiles - Total de perfiles: 0
+2025-10-29 08:23:16 [main] INFO  estructurasparcial4.App - Sistema inicializado con 0 perfiles
+2025-10-29 08:23:16 [main] INFO  estructurasparcial4.App - Mostrando menú principal
+2025-10-29 08:23:49 [main] INFO  estructurasparcial4.App - Iniciando aplicación de Red Social
+2025-10-29 08:23:49 [main] INFO  estructurasparcial4.Service.AlmacenamientoPerfiles - Inicializando AlmacenamientoPerfiles
+2025-10-29 08:23:49 [main] INFO  estructurasparcial4.Service.AlmacenamientoPerfiles - AlmacenamientoPerfiles inicializado
+2025-10-29 08:23:49 [main] INFO  estructurasparcial4.Service.MotorSugerencias - Inicializando MotorSugerencias
+2025-10-29 08:23:49 [main] INFO  estructurasparcial4.Service.MotorSugerencias - MotorSugerencias inicializado
+2025-10-29 08:23:49 [main] INFO  estructurasparcial4.Service.LeerPerfiles - Leyendo el archivo de perfiles: C:\Users\david\Documents\GitHub\Parcial4\EstructurasParcial4\app\src\main\resources\Perfiles.json
+2025-10-29 08:23:49 [main] INFO  estructurasparcial4.Service.LeerPerfiles - Archivo de perfiles leído exitosamente. Perfiles encontrados: 13
+2025-10-29 08:23:49 [main] INFO  estructurasparcial4.Service.AlmacenamientoPerfiles - Intentando crear perfil
+2025-10-29 08:23:49 [main] INFO  estructurasparcial4.Service.AlmacenamientoPerfiles - Perfil creado exitosamente: 010
+2025-10-29 08:23:49 [main] INFO  estructurasparcial4.Service.AlmacenamientoPerfiles - Intentando crear perfil
+2025-10-29 08:23:49 [main] INFO  estructurasparcial4.Service.AlmacenamientoPerfiles - Perfil creado exitosamente: 001
+2025-10-29 08:23:49 [main] INFO  estructurasparcial4.Service.AlmacenamientoPerfiles - Intentando crear perfil
+2025-10-29 08:23:49 [main] INFO  estructurasparcial4.Service.AlmacenamientoPerfiles - Perfil creado exitosamente: 100
+2025-10-29 08:23:49 [main] INFO  estructurasparcial4.Service.AlmacenamientoPerfiles - Intentando crear perfil
+2025-10-29 08:23:49 [main] INFO  estructurasparcial4.Service.AlmacenamientoPerfiles - Perfil creado exitosamente: 111
+2025-10-29 08:23:49 [main] INFO  estructurasparcial4.Service.AlmacenamientoPerfiles - Intentando crear perfil
+2025-10-29 08:23:49 [main] INFO  estructurasparcial4.Service.AlmacenamientoPerfiles - Perfil creado exitosamente: 002
+2025-10-29 08:23:49 [main] INFO  estructurasparcial4.Service.AlmacenamientoPerfiles - Intentando crear perfil
+2025-10-29 08:23:49 [main] INFO  estructurasparcial4.Service.AlmacenamientoPerfiles - Perfil creado exitosamente: 013
+2025-10-29 08:23:49 [main] INFO  estructurasparcial4.Service.AlmacenamientoPerfiles - Intentando crear perfil
+2025-10-29 08:23:49 [main] INFO  estructurasparcial4.Service.AlmacenamientoPerfiles - Perfil creado exitosamente: 003
+2025-10-29 08:23:49 [main] INFO  estructurasparcial4.Service.AlmacenamientoPerfiles - Intentando crear perfil
+2025-10-29 08:23:49 [main] INFO  estructurasparcial4.Service.AlmacenamientoPerfiles - Perfil creado exitosamente: 004
+2025-10-29 08:23:49 [main] INFO  estructurasparcial4.Service.AlmacenamientoPerfiles - Intentando crear perfil
+2025-10-29 08:23:49 [main] INFO  estructurasparcial4.Service.AlmacenamientoPerfiles - Perfil creado exitosamente: 005
+2025-10-29 08:23:49 [main] INFO  estructurasparcial4.Service.AlmacenamientoPerfiles - Intentando crear perfil
+2025-10-29 08:23:49 [main] INFO  estructurasparcial4.Service.AlmacenamientoPerfiles - Perfil creado exitosamente: 006
+2025-10-29 08:23:49 [main] INFO  estructurasparcial4.Service.AlmacenamientoPerfiles - Intentando crear perfil
+2025-10-29 08:23:49 [main] INFO  estructurasparcial4.Service.AlmacenamientoPerfiles - Perfil creado exitosamente: 007
+2025-10-29 08:23:49 [main] INFO  estructurasparcial4.Service.AlmacenamientoPerfiles - Intentando crear perfil
+2025-10-29 08:23:49 [main] INFO  estructurasparcial4.Service.AlmacenamientoPerfiles - Perfil creado exitosamente: 008
+2025-10-29 08:23:49 [main] INFO  estructurasparcial4.Service.AlmacenamientoPerfiles - Intentando crear perfil
+2025-10-29 08:23:49 [main] INFO  estructurasparcial4.Service.AlmacenamientoPerfiles - Perfil creado exitosamente: 009
+2025-10-29 08:23:49 [main] INFO  estructurasparcial4.Service.LeerPerfiles - Perfiles cargados en almacenamiento: 13
+2025-10-29 08:23:49 [main] INFO  estructurasparcial4.Service.AlmacenamientoPerfiles - Obteniendo todos los perfiles
+2025-10-29 08:23:49 [main] INFO  estructurasparcial4.Service.AlmacenamientoPerfiles - Total de perfiles retornados: 13
+2025-10-29 08:23:49 [main] INFO  estructurasparcial4.Service.MotorSugerencias - Cargando lazos desde perfiles a la red social
+2025-10-29 08:23:49 [main] INFO  estructurasparcial4.Service.AlmacenamientoPerfiles - Obteniendo todos los perfiles
+2025-10-29 08:23:49 [main] INFO  estructurasparcial4.Service.AlmacenamientoPerfiles - Total de perfiles retornados: 13
+2025-10-29 08:23:49 [main] INFO  estructurasparcial4.Service.MotorSugerencias - Lazos cargados exitosamente: 2
+2025-10-29 08:23:49 [main] INFO  estructurasparcial4.Service.AlmacenamientoPerfiles - Obteniendo total de perfiles
+2025-10-29 08:23:49 [main] INFO  estructurasparcial4.Service.AlmacenamientoPerfiles - Total de perfiles: 13
+2025-10-29 08:23:49 [main] INFO  estructurasparcial4.Service.AlmacenamientoPerfiles - Obteniendo total de perfiles
+2025-10-29 08:23:49 [main] INFO  estructurasparcial4.Service.AlmacenamientoPerfiles - Total de perfiles: 13
+2025-10-29 08:23:49 [main] INFO  estructurasparcial4.App - Sistema inicializado con 13 perfiles
+2025-10-29 08:23:49 [main] INFO  estructurasparcial4.App - Mostrando menú principal
+2025-10-29 08:24:11 [main] INFO  estructurasparcial4.App - Opción seleccionada: 2
+2025-10-29 08:24:11 [main] INFO  estructurasparcial4.App - Iniciando generación de amistad
+2025-10-29 08:24:32 [main] INFO  estructurasparcial4.Service.MotorSugerencias - Generando amistad entre 010 y 001 con calidad 3
+2025-10-29 08:24:32 [main] INFO  estructurasparcial4.Service.AlmacenamientoPerfiles - Buscando perfil: 010
+2025-10-29 08:24:32 [main] INFO  estructurasparcial4.Service.AlmacenamientoPerfiles - Perfil encontrado: 010
+2025-10-29 08:24:32 [main] INFO  estructurasparcial4.Service.AlmacenamientoPerfiles - Buscando perfil: 001
+2025-10-29 08:24:32 [main] INFO  estructurasparcial4.Service.AlmacenamientoPerfiles - Perfil encontrado: 001
+2025-10-29 08:24:32 [main] INFO  estructurasparcial4.Model.Perfil - Agregando amigo: 001 a perfil: 010
+2025-10-29 08:24:32 [main] INFO  estructurasparcial4.Model.Perfil - Amigo agregado: 001 a perfil: 010
+2025-10-29 08:24:32 [main] INFO  estructurasparcial4.Model.Perfil - Agregando amigo: 010 a perfil: 001
+2025-10-29 08:24:32 [main] INFO  estructurasparcial4.Model.Perfil - Amigo agregado: 010 a perfil: 001
+2025-10-29 08:24:32 [main] INFO  estructurasparcial4.Service.MotorSugerencias - Amistad generada exitosamente entre 010 y 001
+2025-10-29 08:24:32 [main] INFO  estructurasparcial4.Service.AlmacenamientoPerfiles - Obteniendo todos los perfiles
+2025-10-29 08:24:32 [main] INFO  estructurasparcial4.Service.AlmacenamientoPerfiles - Total de perfiles retornados: 13
+2025-10-29 08:24:32 [main] INFO  estructurasparcial4.Service.LeerPerfiles - Perfiles guardados exitosamente en: C:\Users\david\Documents\GitHub\Parcial4\EstructurasParcial4\app\src\main\resources\Perfiles.json
+2025-10-29 08:24:32 [main] INFO  estructurasparcial4.App - Lazo de amistad creado exitosamente entre 010 y 001
+2025-10-29 08:24:34 [main] INFO  estructurasparcial4.App - Opción seleccionada: 4
+2025-10-29 08:24:34 [main] INFO  estructurasparcial4.App - Iniciando sugerencia de amigos
+2025-10-29 08:24:38 [main] INFO  estructurasparcial4.Service.MotorSugerencias - Generando sugerencias de amigos para usuario: 010
+2025-10-29 08:24:38 [main] INFO  estructurasparcial4.Service.AlmacenamientoPerfiles - Buscando perfil: 010
+2025-10-29 08:24:38 [main] INFO  estructurasparcial4.Service.AlmacenamientoPerfiles - Perfil encontrado: 010
+2025-10-29 08:24:38 [main] INFO  estructurasparcial4.Service.AlmacenamientoPerfiles - Buscando perfil: 001
+2025-10-29 08:24:38 [main] INFO  estructurasparcial4.Service.AlmacenamientoPerfiles - Perfil encontrado: 001
+2025-10-29 08:24:38 [main] INFO  estructurasparcial4.Service.AlmacenamientoPerfiles - Buscando perfil: 002
+2025-10-29 08:24:38 [main] INFO  estructurasparcial4.Service.AlmacenamientoPerfiles - Perfil encontrado: 002
+2025-10-29 08:24:38 [main] INFO  estructurasparcial4.Model.SugerenciaAmigo - Creando sugerencia de amigo: 002
+2025-10-29 08:24:38 [main] INFO  estructurasparcial4.Model.SugerenciaAmigo - Sugerencia de amigo creada: 002 con prioridad: 3
+2025-10-29 08:24:38 [main] INFO  estructurasparcial4.Service.MotorSugerencias - Ordenando sugerencias por prioridad y nombre
+2025-10-29 08:24:38 [main] INFO  estructurasparcial4.Service.MotorSugerencias - Sugerencias generadas para 010: 1 sugerencias encontradas
+2025-10-29 08:24:38 [main] INFO  estructurasparcial4.App - Se mostraron 1 sugerencias para usuario: 010
+2025-10-29 08:24:55 [main] INFO  estructurasparcial4.App - Opción seleccionada: 5
+2025-10-29 08:24:55 [main] INFO  estructurasparcial4.App - Listando todos los perfiles
+2025-10-29 08:24:55 [main] INFO  estructurasparcial4.Service.AlmacenamientoPerfiles - Obteniendo todos los perfiles
+2025-10-29 08:24:55 [main] INFO  estructurasparcial4.Service.AlmacenamientoPerfiles - Total de perfiles retornados: 13
+2025-10-29 08:24:55 [main] INFO  estructurasparcial4.App - Se listaron 13 perfiles
+2025-10-29 08:25:35 [main] INFO  estructurasparcial4.App - Opción seleccionada: 2
+2025-10-29 08:25:35 [main] INFO  estructurasparcial4.App - Iniciando generación de amistad
+2025-10-29 08:25:40 [main] INFO  estructurasparcial4.Service.MotorSugerencias - Generando amistad entre 100 y 010 con calidad 5
+2025-10-29 08:25:40 [main] INFO  estructurasparcial4.Service.AlmacenamientoPerfiles - Buscando perfil: 100
+2025-10-29 08:25:40 [main] INFO  estructurasparcial4.Service.AlmacenamientoPerfiles - Perfil encontrado: 100
+2025-10-29 08:25:40 [main] INFO  estructurasparcial4.Service.AlmacenamientoPerfiles - Buscando perfil: 010
+2025-10-29 08:25:40 [main] INFO  estructurasparcial4.Service.AlmacenamientoPerfiles - Perfil encontrado: 010
+2025-10-29 08:25:40 [main] INFO  estructurasparcial4.Model.Perfil - Agregando amigo: 010 a perfil: 100
+2025-10-29 08:25:40 [main] INFO  estructurasparcial4.Model.Perfil - Amigo agregado: 010 a perfil: 100
+2025-10-29 08:25:40 [main] INFO  estructurasparcial4.Model.Perfil - Agregando amigo: 100 a perfil: 010
+2025-10-29 08:25:40 [main] INFO  estructurasparcial4.Model.Perfil - Amigo agregado: 100 a perfil: 010
+2025-10-29 08:25:40 [main] INFO  estructurasparcial4.Service.MotorSugerencias - Amistad generada exitosamente entre 100 y 010
+2025-10-29 08:25:40 [main] INFO  estructurasparcial4.Service.AlmacenamientoPerfiles - Obteniendo todos los perfiles
+2025-10-29 08:25:40 [main] INFO  estructurasparcial4.Service.AlmacenamientoPerfiles - Total de perfiles retornados: 13
+2025-10-29 08:25:40 [main] INFO  estructurasparcial4.Service.LeerPerfiles - Perfiles guardados exitosamente en: C:\Users\david\Documents\GitHub\Parcial4\EstructurasParcial4\app\src\main\resources\Perfiles.json
+2025-10-29 08:25:40 [main] INFO  estructurasparcial4.App - Lazo de amistad creado exitosamente entre 100 y 010
+2025-10-29 08:25:43 [main] INFO  estructurasparcial4.App - Opción seleccionada: 4
+2025-10-29 08:25:43 [main] INFO  estructurasparcial4.App - Iniciando sugerencia de amigos
+2025-10-29 08:25:44 [main] INFO  estructurasparcial4.Service.MotorSugerencias - Generando sugerencias de amigos para usuario: 100
+2025-10-29 08:25:44 [main] INFO  estructurasparcial4.Service.AlmacenamientoPerfiles - Buscando perfil: 100
+2025-10-29 08:25:44 [main] INFO  estructurasparcial4.Service.AlmacenamientoPerfiles - Perfil encontrado: 100
+2025-10-29 08:25:44 [main] INFO  estructurasparcial4.Service.AlmacenamientoPerfiles - Buscando perfil: 010
+2025-10-29 08:25:44 [main] INFO  estructurasparcial4.Service.AlmacenamientoPerfiles - Perfil encontrado: 010
+2025-10-29 08:25:44 [main] INFO  estructurasparcial4.Service.AlmacenamientoPerfiles - Buscando perfil: 001
+2025-10-29 08:25:44 [main] INFO  estructurasparcial4.Service.AlmacenamientoPerfiles - Perfil encontrado: 001
+2025-10-29 08:25:44 [main] INFO  estructurasparcial4.Model.SugerenciaAmigo - Creando sugerencia de amigo: 001
+2025-10-29 08:25:44 [main] INFO  estructurasparcial4.Model.SugerenciaAmigo - Sugerencia de amigo creada: 001 con prioridad: 5
+2025-10-29 08:25:44 [main] INFO  estructurasparcial4.Service.MotorSugerencias - Ordenando sugerencias por prioridad y nombre
+2025-10-29 08:25:44 [main] INFO  estructurasparcial4.Service.MotorSugerencias - Sugerencias generadas para 100: 1 sugerencias encontradas
+2025-10-29 08:25:44 [main] INFO  estructurasparcial4.App - Se mostraron 1 sugerencias para usuario: 100
+2025-10-29 08:26:08 [main] INFO  estructurasparcial4.App - Opción seleccionada: 2
+2025-10-29 08:26:08 [main] INFO  estructurasparcial4.App - Iniciando generación de amistad
+2025-10-29 08:26:16 [main] INFO  estructurasparcial4.Service.MotorSugerencias - Generando amistad entre 013 y 010 con calidad 4
+2025-10-29 08:26:16 [main] INFO  estructurasparcial4.Service.AlmacenamientoPerfiles - Buscando perfil: 013
+2025-10-29 08:26:16 [main] INFO  estructurasparcial4.Service.AlmacenamientoPerfiles - Perfil encontrado: 013
+2025-10-29 08:26:16 [main] INFO  estructurasparcial4.Service.AlmacenamientoPerfiles - Buscando perfil: 010
+2025-10-29 08:26:16 [main] INFO  estructurasparcial4.Service.AlmacenamientoPerfiles - Perfil encontrado: 010
+2025-10-29 08:26:16 [main] INFO  estructurasparcial4.Model.Perfil - Agregando amigo: 010 a perfil: 013
+2025-10-29 08:26:16 [main] INFO  estructurasparcial4.Model.Perfil - Amigo agregado: 010 a perfil: 013
+2025-10-29 08:26:16 [main] INFO  estructurasparcial4.Model.Perfil - Agregando amigo: 013 a perfil: 010
+2025-10-29 08:26:16 [main] INFO  estructurasparcial4.Model.Perfil - Amigo agregado: 013 a perfil: 010
+2025-10-29 08:26:16 [main] INFO  estructurasparcial4.Service.MotorSugerencias - Amistad generada exitosamente entre 013 y 010
+2025-10-29 08:26:16 [main] INFO  estructurasparcial4.Service.AlmacenamientoPerfiles - Obteniendo todos los perfiles
+2025-10-29 08:26:16 [main] INFO  estructurasparcial4.Service.AlmacenamientoPerfiles - Total de perfiles retornados: 13
+2025-10-29 08:26:16 [main] INFO  estructurasparcial4.Service.LeerPerfiles - Perfiles guardados exitosamente en: C:\Users\david\Documents\GitHub\Parcial4\EstructurasParcial4\app\src\main\resources\Perfiles.json
+2025-10-29 08:26:16 [main] INFO  estructurasparcial4.App - Lazo de amistad creado exitosamente entre 013 y 010
+2025-10-29 08:26:17 [main] INFO  estructurasparcial4.App - Opción seleccionada: 4
+2025-10-29 08:26:17 [main] INFO  estructurasparcial4.App - Iniciando sugerencia de amigos
+2025-10-29 08:26:21 [main] INFO  estructurasparcial4.Service.MotorSugerencias - Generando sugerencias de amigos para usuario: 013
+2025-10-29 08:26:21 [main] INFO  estructurasparcial4.Service.AlmacenamientoPerfiles - Buscando perfil: 013
+2025-10-29 08:26:21 [main] INFO  estructurasparcial4.Service.AlmacenamientoPerfiles - Perfil encontrado: 013
+2025-10-29 08:26:21 [main] INFO  estructurasparcial4.Service.AlmacenamientoPerfiles - Buscando perfil: 010
+2025-10-29 08:26:21 [main] INFO  estructurasparcial4.Service.AlmacenamientoPerfiles - Perfil encontrado: 010
+2025-10-29 08:26:21 [main] INFO  estructurasparcial4.Service.AlmacenamientoPerfiles - Buscando perfil: 001
+2025-10-29 08:26:21 [main] INFO  estructurasparcial4.Service.AlmacenamientoPerfiles - Perfil encontrado: 001
+2025-10-29 08:26:21 [main] INFO  estructurasparcial4.Model.SugerenciaAmigo - Creando sugerencia de amigo: 001
+2025-10-29 08:26:21 [main] INFO  estructurasparcial4.Model.SugerenciaAmigo - Sugerencia de amigo creada: 001 con prioridad: 4
+2025-10-29 08:26:21 [main] INFO  estructurasparcial4.Service.AlmacenamientoPerfiles - Buscando perfil: 100
+2025-10-29 08:26:21 [main] INFO  estructurasparcial4.Service.AlmacenamientoPerfiles - Perfil encontrado: 100
+2025-10-29 08:26:21 [main] INFO  estructurasparcial4.Model.SugerenciaAmigo - Creando sugerencia de amigo: 100
+2025-10-29 08:26:21 [main] INFO  estructurasparcial4.Model.SugerenciaAmigo - Sugerencia de amigo creada: 100 con prioridad: 4
+2025-10-29 08:26:21 [main] INFO  estructurasparcial4.Service.MotorSugerencias - Ordenando sugerencias por prioridad y nombre
+2025-10-29 08:26:21 [main] INFO  estructurasparcial4.Service.MotorSugerencias - Sugerencias generadas para 013: 2 sugerencias encontradas
+2025-10-29 08:26:21 [main] INFO  estructurasparcial4.App - Se mostraron 2 sugerencias para usuario: 013
+2025-10-29 08:26:51 [main] INFO  estructurasparcial4.App - Iniciando aplicación de Red Social
+2025-10-29 08:26:51 [main] INFO  estructurasparcial4.Service.AlmacenamientoPerfiles - Inicializando AlmacenamientoPerfiles
+2025-10-29 08:26:51 [main] INFO  estructurasparcial4.Service.AlmacenamientoPerfiles - AlmacenamientoPerfiles inicializado
+2025-10-29 08:26:51 [main] INFO  estructurasparcial4.Service.MotorSugerencias - Inicializando MotorSugerencias
+2025-10-29 08:26:51 [main] INFO  estructurasparcial4.Service.MotorSugerencias - MotorSugerencias inicializado
+2025-10-29 08:26:51 [main] INFO  estructurasparcial4.Service.LeerPerfiles - Leyendo el archivo de perfiles: C:\Users\david\Documents\GitHub\Parcial4\EstructurasParcial4\app\src\main\resources\Perfiles.json
+2025-10-29 08:26:51 [main] INFO  estructurasparcial4.Service.LeerPerfiles - Archivo de perfiles leído exitosamente. Perfiles encontrados: 13
+2025-10-29 08:26:51 [main] INFO  estructurasparcial4.Service.AlmacenamientoPerfiles - Intentando crear perfil
+2025-10-29 08:26:51 [main] INFO  estructurasparcial4.Service.AlmacenamientoPerfiles - Perfil creado exitosamente: 010
+2025-10-29 08:26:51 [main] INFO  estructurasparcial4.Service.AlmacenamientoPerfiles - Intentando crear perfil
+2025-10-29 08:26:51 [main] INFO  estructurasparcial4.Service.AlmacenamientoPerfiles - Perfil creado exitosamente: 001
+2025-10-29 08:26:51 [main] INFO  estructurasparcial4.Service.AlmacenamientoPerfiles - Intentando crear perfil
+2025-10-29 08:26:51 [main] INFO  estructurasparcial4.Service.AlmacenamientoPerfiles - Perfil creado exitosamente: 100
+2025-10-29 08:26:51 [main] INFO  estructurasparcial4.Service.AlmacenamientoPerfiles - Intentando crear perfil
+2025-10-29 08:26:51 [main] INFO  estructurasparcial4.Service.AlmacenamientoPerfiles - Perfil creado exitosamente: 111
+2025-10-29 08:26:51 [main] INFO  estructurasparcial4.Service.AlmacenamientoPerfiles - Intentando crear perfil
+2025-10-29 08:26:51 [main] INFO  estructurasparcial4.Service.AlmacenamientoPerfiles - Perfil creado exitosamente: 002
+2025-10-29 08:26:51 [main] INFO  estructurasparcial4.Service.AlmacenamientoPerfiles - Intentando crear perfil
+2025-10-29 08:26:51 [main] INFO  estructurasparcial4.Service.AlmacenamientoPerfiles - Perfil creado exitosamente: 013
+2025-10-29 08:26:51 [main] INFO  estructurasparcial4.Service.AlmacenamientoPerfiles - Intentando crear perfil
+2025-10-29 08:26:51 [main] INFO  estructurasparcial4.Service.AlmacenamientoPerfiles - Perfil creado exitosamente: 003
+2025-10-29 08:26:51 [main] INFO  estructurasparcial4.Service.AlmacenamientoPerfiles - Intentando crear perfil
+2025-10-29 08:26:51 [main] INFO  estructurasparcial4.Service.AlmacenamientoPerfiles - Perfil creado exitosamente: 004
+2025-10-29 08:26:51 [main] INFO  estructurasparcial4.Service.AlmacenamientoPerfiles - Intentando crear perfil
+2025-10-29 08:26:51 [main] INFO  estructurasparcial4.Service.AlmacenamientoPerfiles - Perfil creado exitosamente: 005
+2025-10-29 08:26:51 [main] INFO  estructurasparcial4.Service.AlmacenamientoPerfiles - Intentando crear perfil
+2025-10-29 08:26:51 [main] INFO  estructurasparcial4.Service.AlmacenamientoPerfiles - Perfil creado exitosamente: 006
+2025-10-29 08:26:51 [main] INFO  estructurasparcial4.Service.AlmacenamientoPerfiles - Intentando crear perfil
+2025-10-29 08:26:51 [main] INFO  estructurasparcial4.Service.AlmacenamientoPerfiles - Perfil creado exitosamente: 007
+2025-10-29 08:26:51 [main] INFO  estructurasparcial4.Service.AlmacenamientoPerfiles - Intentando crear perfil
+2025-10-29 08:26:51 [main] INFO  estructurasparcial4.Service.AlmacenamientoPerfiles - Perfil creado exitosamente: 008
+2025-10-29 08:26:51 [main] INFO  estructurasparcial4.Service.AlmacenamientoPerfiles - Intentando crear perfil
+2025-10-29 08:26:51 [main] INFO  estructurasparcial4.Service.AlmacenamientoPerfiles - Perfil creado exitosamente: 009
+2025-10-29 08:26:51 [main] INFO  estructurasparcial4.Service.LeerPerfiles - Perfiles cargados en almacenamiento: 13
+2025-10-29 08:26:51 [main] INFO  estructurasparcial4.Service.AlmacenamientoPerfiles - Obteniendo todos los perfiles
+2025-10-29 08:26:51 [main] INFO  estructurasparcial4.Service.AlmacenamientoPerfiles - Total de perfiles retornados: 13
+2025-10-29 08:26:51 [main] INFO  estructurasparcial4.Service.MotorSugerencias - Cargando lazos desde perfiles a la red social
+2025-10-29 08:26:51 [main] INFO  estructurasparcial4.Service.AlmacenamientoPerfiles - Obteniendo todos los perfiles
+2025-10-29 08:26:51 [main] INFO  estructurasparcial4.Service.AlmacenamientoPerfiles - Total de perfiles retornados: 13
+2025-10-29 08:26:51 [main] INFO  estructurasparcial4.Service.MotorSugerencias - Lazos cargados exitosamente: 5
+2025-10-29 08:26:51 [main] INFO  estructurasparcial4.Service.AlmacenamientoPerfiles - Obteniendo total de perfiles
+2025-10-29 08:26:51 [main] INFO  estructurasparcial4.Service.AlmacenamientoPerfiles - Total de perfiles: 13
+2025-10-29 08:26:51 [main] INFO  estructurasparcial4.Service.AlmacenamientoPerfiles - Obteniendo total de perfiles
+2025-10-29 08:26:51 [main] INFO  estructurasparcial4.Service.AlmacenamientoPerfiles - Total de perfiles: 13
+2025-10-29 08:26:51 [main] INFO  estructurasparcial4.App - Sistema inicializado con 13 perfiles
+2025-10-29 08:26:51 [main] INFO  estructurasparcial4.App - Mostrando menú principal
+2025-10-29 08:26:57 [main] INFO  estructurasparcial4.App - Opción seleccionada: 4
+2025-10-29 08:26:57 [main] INFO  estructurasparcial4.App - Iniciando sugerencia de amigos
+2025-10-29 08:26:58 [main] INFO  estructurasparcial4.Service.MotorSugerencias - Generando sugerencias de amigos para usuario: 100
+2025-10-29 08:26:58 [main] INFO  estructurasparcial4.Service.AlmacenamientoPerfiles - Buscando perfil: 100
+2025-10-29 08:26:58 [main] INFO  estructurasparcial4.Service.AlmacenamientoPerfiles - Perfil encontrado: 100
+2025-10-29 08:26:58 [main] INFO  estructurasparcial4.Service.AlmacenamientoPerfiles - Buscando perfil: 010
+2025-10-29 08:26:58 [main] INFO  estructurasparcial4.Service.AlmacenamientoPerfiles - Perfil encontrado: 010
+2025-10-29 08:26:58 [main] INFO  estructurasparcial4.Service.AlmacenamientoPerfiles - Buscando perfil: 001
+2025-10-29 08:26:58 [main] INFO  estructurasparcial4.Service.AlmacenamientoPerfiles - Perfil encontrado: 001
+2025-10-29 08:26:58 [main] INFO  estructurasparcial4.Model.SugerenciaAmigo - Creando sugerencia de amigo: 001
+2025-10-29 08:26:58 [main] INFO  estructurasparcial4.Model.SugerenciaAmigo - Sugerencia de amigo creada: 001 con prioridad: 5
+2025-10-29 08:26:58 [main] INFO  estructurasparcial4.Service.AlmacenamientoPerfiles - Buscando perfil: 013
+2025-10-29 08:26:58 [main] INFO  estructurasparcial4.Service.AlmacenamientoPerfiles - Perfil encontrado: 013
+2025-10-29 08:26:58 [main] INFO  estructurasparcial4.Model.SugerenciaAmigo - Creando sugerencia de amigo: 013
+2025-10-29 08:26:58 [main] INFO  estructurasparcial4.Model.SugerenciaAmigo - Sugerencia de amigo creada: 013 con prioridad: 5
+2025-10-29 08:26:58 [main] INFO  estructurasparcial4.Service.MotorSugerencias - Ordenando sugerencias por prioridad y nombre
+2025-10-29 08:26:58 [main] INFO  estructurasparcial4.Service.MotorSugerencias - Sugerencias generadas para 100: 2 sugerencias encontradas
+2025-10-29 08:26:58 [main] INFO  estructurasparcial4.App - Se mostraron 2 sugerencias para usuario: 100
+2025-10-29 08:30:32 [main] INFO  estructurasparcial4.App - Iniciando aplicación de Red Social
+2025-10-29 08:30:32 [main] INFO  estructurasparcial4.Service.AlmacenamientoPerfiles - Inicializando AlmacenamientoPerfiles
+2025-10-29 08:30:32 [main] INFO  estructurasparcial4.Service.AlmacenamientoPerfiles - AlmacenamientoPerfiles inicializado
+2025-10-29 08:30:32 [main] INFO  estructurasparcial4.Service.MotorSugerencias - Inicializando MotorSugerencias
+2025-10-29 08:30:32 [main] INFO  estructurasparcial4.Service.MotorSugerencias - MotorSugerencias inicializado
+2025-10-29 08:30:32 [main] INFO  estructurasparcial4.Service.LeerPerfiles - Leyendo el archivo de perfiles: C:\Users\david\Documents\GitHub\Parcial4\EstructurasParcial4\app\src\main\resources\Perfiles.json
+2025-10-29 08:30:32 [main] INFO  estructurasparcial4.Service.LeerPerfiles - Archivo de perfiles leído exitosamente. Perfiles encontrados: 13
+2025-10-29 08:30:32 [main] INFO  estructurasparcial4.Service.AlmacenamientoPerfiles - Intentando crear perfil
+2025-10-29 08:30:32 [main] INFO  estructurasparcial4.Service.AlmacenamientoPerfiles - Perfil creado exitosamente: 010
+2025-10-29 08:30:32 [main] INFO  estructurasparcial4.Service.AlmacenamientoPerfiles - Intentando crear perfil
+2025-10-29 08:30:32 [main] INFO  estructurasparcial4.Service.AlmacenamientoPerfiles - Perfil creado exitosamente: 001
+2025-10-29 08:30:32 [main] INFO  estructurasparcial4.Service.AlmacenamientoPerfiles - Intentando crear perfil
+2025-10-29 08:30:32 [main] INFO  estructurasparcial4.Service.AlmacenamientoPerfiles - Perfil creado exitosamente: 100
+2025-10-29 08:30:32 [main] INFO  estructurasparcial4.Service.AlmacenamientoPerfiles - Intentando crear perfil
+2025-10-29 08:30:32 [main] INFO  estructurasparcial4.Service.AlmacenamientoPerfiles - Perfil creado exitosamente: 111
+2025-10-29 08:30:32 [main] INFO  estructurasparcial4.Service.AlmacenamientoPerfiles - Intentando crear perfil
+2025-10-29 08:30:32 [main] INFO  estructurasparcial4.Service.AlmacenamientoPerfiles - Perfil creado exitosamente: 002
+2025-10-29 08:30:32 [main] INFO  estructurasparcial4.Service.AlmacenamientoPerfiles - Intentando crear perfil
+2025-10-29 08:30:32 [main] INFO  estructurasparcial4.Service.AlmacenamientoPerfiles - Perfil creado exitosamente: 013
+2025-10-29 08:30:32 [main] INFO  estructurasparcial4.Service.AlmacenamientoPerfiles - Intentando crear perfil
+2025-10-29 08:30:32 [main] INFO  estructurasparcial4.Service.AlmacenamientoPerfiles - Perfil creado exitosamente: 003
+2025-10-29 08:30:32 [main] INFO  estructurasparcial4.Service.AlmacenamientoPerfiles - Intentando crear perfil
+2025-10-29 08:30:32 [main] INFO  estructurasparcial4.Service.AlmacenamientoPerfiles - Perfil creado exitosamente: 004
+2025-10-29 08:30:32 [main] INFO  estructurasparcial4.Service.AlmacenamientoPerfiles - Intentando crear perfil
+2025-10-29 08:30:32 [main] INFO  estructurasparcial4.Service.AlmacenamientoPerfiles - Perfil creado exitosamente: 005
+2025-10-29 08:30:32 [main] INFO  estructurasparcial4.Service.AlmacenamientoPerfiles - Intentando crear perfil
+2025-10-29 08:30:32 [main] INFO  estructurasparcial4.Service.AlmacenamientoPerfiles - Perfil creado exitosamente: 006
+2025-10-29 08:30:32 [main] INFO  estructurasparcial4.Service.AlmacenamientoPerfiles - Intentando crear perfil
+2025-10-29 08:30:32 [main] INFO  estructurasparcial4.Service.AlmacenamientoPerfiles - Perfil creado exitosamente: 007
+2025-10-29 08:30:32 [main] INFO  estructurasparcial4.Service.AlmacenamientoPerfiles - Intentando crear perfil
+2025-10-29 08:30:32 [main] INFO  estructurasparcial4.Service.AlmacenamientoPerfiles - Perfil creado exitosamente: 008
+2025-10-29 08:30:32 [main] INFO  estructurasparcial4.Service.AlmacenamientoPerfiles - Intentando crear perfil
+2025-10-29 08:30:32 [main] INFO  estructurasparcial4.Service.AlmacenamientoPerfiles - Perfil creado exitosamente: 009
+2025-10-29 08:30:32 [main] INFO  estructurasparcial4.Service.LeerPerfiles - Perfiles cargados en almacenamiento: 13
+2025-10-29 08:30:32 [main] INFO  estructurasparcial4.Service.AlmacenamientoPerfiles - Obteniendo todos los perfiles
+2025-10-29 08:30:32 [main] INFO  estructurasparcial4.Service.AlmacenamientoPerfiles - Total de perfiles retornados: 13
+2025-10-29 08:30:32 [main] INFO  estructurasparcial4.Service.MotorSugerencias - Cargando lazos desde perfiles a la red social
+2025-10-29 08:30:32 [main] INFO  estructurasparcial4.Service.AlmacenamientoPerfiles - Obteniendo todos los perfiles
+2025-10-29 08:30:32 [main] INFO  estructurasparcial4.Service.AlmacenamientoPerfiles - Total de perfiles retornados: 13
+2025-10-29 08:30:32 [main] INFO  estructurasparcial4.Service.MotorSugerencias - Lazos cargados exitosamente: 5
+2025-10-29 08:30:32 [main] INFO  estructurasparcial4.Service.AlmacenamientoPerfiles - Obteniendo total de perfiles
+2025-10-29 08:30:32 [main] INFO  estructurasparcial4.Service.AlmacenamientoPerfiles - Total de perfiles: 13
+2025-10-29 08:30:32 [main] INFO  estructurasparcial4.Service.AlmacenamientoPerfiles - Obteniendo total de perfiles
+2025-10-29 08:30:32 [main] INFO  estructurasparcial4.Service.AlmacenamientoPerfiles - Total de perfiles: 13
+2025-10-29 08:30:32 [main] INFO  estructurasparcial4.App - Sistema inicializado con 13 perfiles
+2025-10-29 08:30:32 [main] INFO  estructurasparcial4.App - Mostrando menú principal
+2025-10-29 08:30:34 [main] INFO  estructurasparcial4.App - Opción seleccionada: 4
+2025-10-29 08:30:34 [main] INFO  estructurasparcial4.App - Iniciando sugerencia de amigos
+2025-10-29 08:30:35 [main] INFO  estructurasparcial4.Service.MotorSugerencias - Generando sugerencias de amigos para usuario: 100
+2025-10-29 08:30:35 [main] INFO  estructurasparcial4.Service.AlmacenamientoPerfiles - Buscando perfil: 100
+2025-10-29 08:30:35 [main] INFO  estructurasparcial4.Service.AlmacenamientoPerfiles - Perfil encontrado: 100
+2025-10-29 08:30:35 [main] INFO  estructurasparcial4.Service.AlmacenamientoPerfiles - Buscando perfil: 010
+2025-10-29 08:30:35 [main] INFO  estructurasparcial4.Service.AlmacenamientoPerfiles - Perfil encontrado: 010
+2025-10-29 08:30:35 [main] INFO  estructurasparcial4.Service.AlmacenamientoPerfiles - Buscando perfil: 001
+2025-10-29 08:30:35 [main] INFO  estructurasparcial4.Service.AlmacenamientoPerfiles - Perfil encontrado: 001
+2025-10-29 08:30:35 [main] INFO  estructurasparcial4.Model.SugerenciaAmigo - Creando sugerencia de amigo: 001
+2025-10-29 08:30:35 [main] INFO  estructurasparcial4.Model.SugerenciaAmigo - Sugerencia de amigo creada: 001 con prioridad: 5
+2025-10-29 08:30:35 [main] INFO  estructurasparcial4.Service.AlmacenamientoPerfiles - Buscando perfil: 013
+2025-10-29 08:30:35 [main] INFO  estructurasparcial4.Service.AlmacenamientoPerfiles - Perfil encontrado: 013
+2025-10-29 08:30:35 [main] INFO  estructurasparcial4.Model.SugerenciaAmigo - Creando sugerencia de amigo: 013
+2025-10-29 08:30:35 [main] INFO  estructurasparcial4.Model.SugerenciaAmigo - Sugerencia de amigo creada: 013 con prioridad: 5
+2025-10-29 08:30:35 [main] INFO  estructurasparcial4.Service.MotorSugerencias - Ordenando sugerencias por prioridad y nombre
+2025-10-29 08:30:35 [main] INFO  estructurasparcial4.Service.MotorSugerencias - Sugerencias generadas para 100: 2 sugerencias encontradas
+2025-10-29 08:30:35 [main] INFO  estructurasparcial4.App - Se mostraron 2 sugerencias para usuario: 100
+2025-10-29 08:31:00 [main] INFO  estructurasparcial4.App - Iniciando aplicación de Red Social
+2025-10-29 08:31:00 [main] INFO  estructurasparcial4.Service.AlmacenamientoPerfiles - Inicializando AlmacenamientoPerfiles
+2025-10-29 08:31:00 [main] INFO  estructurasparcial4.Service.AlmacenamientoPerfiles - AlmacenamientoPerfiles inicializado
+2025-10-29 08:31:00 [main] INFO  estructurasparcial4.Service.MotorSugerencias - Inicializando MotorSugerencias
+2025-10-29 08:31:00 [main] INFO  estructurasparcial4.Service.MotorSugerencias - MotorSugerencias inicializado
+2025-10-29 08:31:00 [main] INFO  estructurasparcial4.Service.LeerPerfiles - Leyendo el archivo de perfiles: C:\Users\david\Documents\GitHub\Parcial4\EstructurasParcial4\app\src\main\resources\Perfiles.json
+2025-10-29 08:31:00 [main] INFO  estructurasparcial4.Service.LeerPerfiles - Archivo de perfiles leído exitosamente. Perfiles encontrados: 13
+2025-10-29 08:31:00 [main] INFO  estructurasparcial4.Service.AlmacenamientoPerfiles - Intentando crear perfil
+2025-10-29 08:31:00 [main] INFO  estructurasparcial4.Service.AlmacenamientoPerfiles - Perfil creado exitosamente: 010
+2025-10-29 08:31:00 [main] INFO  estructurasparcial4.Service.AlmacenamientoPerfiles - Intentando crear perfil
+2025-10-29 08:31:00 [main] INFO  estructurasparcial4.Service.AlmacenamientoPerfiles - Perfil creado exitosamente: 001
+2025-10-29 08:31:00 [main] INFO  estructurasparcial4.Service.AlmacenamientoPerfiles - Intentando crear perfil
+2025-10-29 08:31:00 [main] INFO  estructurasparcial4.Service.AlmacenamientoPerfiles - Perfil creado exitosamente: 100
+2025-10-29 08:31:00 [main] INFO  estructurasparcial4.Service.AlmacenamientoPerfiles - Intentando crear perfil
+2025-10-29 08:31:00 [main] INFO  estructurasparcial4.Service.AlmacenamientoPerfiles - Perfil creado exitosamente: 111
+2025-10-29 08:31:00 [main] INFO  estructurasparcial4.Service.AlmacenamientoPerfiles - Intentando crear perfil
+2025-10-29 08:31:00 [main] INFO  estructurasparcial4.Service.AlmacenamientoPerfiles - Perfil creado exitosamente: 002
+2025-10-29 08:31:00 [main] INFO  estructurasparcial4.Service.AlmacenamientoPerfiles - Intentando crear perfil
+2025-10-29 08:31:00 [main] INFO  estructurasparcial4.Service.AlmacenamientoPerfiles - Perfil creado exitosamente: 013
+2025-10-29 08:31:00 [main] INFO  estructurasparcial4.Service.AlmacenamientoPerfiles - Intentando crear perfil
+2025-10-29 08:31:00 [main] INFO  estructurasparcial4.Service.AlmacenamientoPerfiles - Perfil creado exitosamente: 003
+2025-10-29 08:31:00 [main] INFO  estructurasparcial4.Service.AlmacenamientoPerfiles - Intentando crear perfil
+2025-10-29 08:31:00 [main] INFO  estructurasparcial4.Service.AlmacenamientoPerfiles - Perfil creado exitosamente: 004
+2025-10-29 08:31:00 [main] INFO  estructurasparcial4.Service.AlmacenamientoPerfiles - Intentando crear perfil
+2025-10-29 08:31:00 [main] INFO  estructurasparcial4.Service.AlmacenamientoPerfiles - Perfil creado exitosamente: 005
+2025-10-29 08:31:00 [main] INFO  estructurasparcial4.Service.AlmacenamientoPerfiles - Intentando crear perfil
+2025-10-29 08:31:00 [main] INFO  estructurasparcial4.Service.AlmacenamientoPerfiles - Perfil creado exitosamente: 006
+2025-10-29 08:31:00 [main] INFO  estructurasparcial4.Service.AlmacenamientoPerfiles - Intentando crear perfil
+2025-10-29 08:31:00 [main] INFO  estructurasparcial4.Service.AlmacenamientoPerfiles - Perfil creado exitosamente: 007
+2025-10-29 08:31:00 [main] INFO  estructurasparcial4.Service.AlmacenamientoPerfiles - Intentando crear perfil
+2025-10-29 08:31:00 [main] INFO  estructurasparcial4.Service.AlmacenamientoPerfiles - Perfil creado exitosamente: 008
+2025-10-29 08:31:00 [main] INFO  estructurasparcial4.Service.AlmacenamientoPerfiles - Intentando crear perfil
+2025-10-29 08:31:00 [main] INFO  estructurasparcial4.Service.AlmacenamientoPerfiles - Perfil creado exitosamente: 009
+2025-10-29 08:31:00 [main] INFO  estructurasparcial4.Service.LeerPerfiles - Perfiles cargados en almacenamiento: 13
+2025-10-29 08:31:00 [main] INFO  estructurasparcial4.Service.AlmacenamientoPerfiles - Obteniendo todos los perfiles
+2025-10-29 08:31:00 [main] INFO  estructurasparcial4.Service.AlmacenamientoPerfiles - Total de perfiles retornados: 13
+2025-10-29 08:31:00 [main] INFO  estructurasparcial4.Service.MotorSugerencias - Cargando lazos desde perfiles a la red social
+2025-10-29 08:31:00 [main] INFO  estructurasparcial4.Service.AlmacenamientoPerfiles - Obteniendo todos los perfiles
+2025-10-29 08:31:00 [main] INFO  estructurasparcial4.Service.AlmacenamientoPerfiles - Total de perfiles retornados: 13
+2025-10-29 08:31:00 [main] INFO  estructurasparcial4.Service.MotorSugerencias - Lazos cargados exitosamente: 5
+2025-10-29 08:31:00 [main] INFO  estructurasparcial4.Service.AlmacenamientoPerfiles - Obteniendo total de perfiles
+2025-10-29 08:31:00 [main] INFO  estructurasparcial4.Service.AlmacenamientoPerfiles - Total de perfiles: 13
+2025-10-29 08:31:00 [main] INFO  estructurasparcial4.Service.AlmacenamientoPerfiles - Obteniendo total de perfiles
+2025-10-29 08:31:00 [main] INFO  estructurasparcial4.Service.AlmacenamientoPerfiles - Total de perfiles: 13
+2025-10-29 08:31:00 [main] INFO  estructurasparcial4.App - Sistema inicializado con 13 perfiles
+2025-10-29 08:31:00 [main] INFO  estructurasparcial4.App - Mostrando menú principal
+2025-10-29 08:31:01 [main] INFO  estructurasparcial4.App - Opción seleccionada: 4
+2025-10-29 08:31:01 [main] INFO  estructurasparcial4.App - Iniciando sugerencia de amigos
+2025-10-29 08:31:03 [main] INFO  estructurasparcial4.Service.MotorSugerencias - Generando sugerencias de amigos para usuario: 001
+2025-10-29 08:31:03 [main] INFO  estructurasparcial4.Service.AlmacenamientoPerfiles - Buscando perfil: 001
+2025-10-29 08:31:03 [main] INFO  estructurasparcial4.Service.AlmacenamientoPerfiles - Perfil encontrado: 001
+2025-10-29 08:31:03 [main] INFO  estructurasparcial4.Service.AlmacenamientoPerfiles - Buscando perfil: 002
+2025-10-29 08:31:03 [main] INFO  estructurasparcial4.Service.AlmacenamientoPerfiles - Perfil encontrado: 002
+2025-10-29 08:31:03 [main] INFO  estructurasparcial4.Service.AlmacenamientoPerfiles - Buscando perfil: 003
+2025-10-29 08:31:03 [main] INFO  estructurasparcial4.Service.AlmacenamientoPerfiles - Perfil encontrado: 003
+2025-10-29 08:31:03 [main] INFO  estructurasparcial4.Model.SugerenciaAmigo - Creando sugerencia de amigo: 003
+2025-10-29 08:31:03 [main] INFO  estructurasparcial4.Model.SugerenciaAmigo - Sugerencia de amigo creada: 003 con prioridad: 4
+2025-10-29 08:31:03 [main] INFO  estructurasparcial4.Service.AlmacenamientoPerfiles - Buscando perfil: 010
+2025-10-29 08:31:03 [main] INFO  estructurasparcial4.Service.AlmacenamientoPerfiles - Perfil encontrado: 010
+2025-10-29 08:31:03 [main] INFO  estructurasparcial4.Service.AlmacenamientoPerfiles - Buscando perfil: 100
+2025-10-29 08:31:03 [main] INFO  estructurasparcial4.Service.AlmacenamientoPerfiles - Perfil encontrado: 100
+2025-10-29 08:31:03 [main] INFO  estructurasparcial4.Model.SugerenciaAmigo - Creando sugerencia de amigo: 100
+2025-10-29 08:31:03 [main] INFO  estructurasparcial4.Model.SugerenciaAmigo - Sugerencia de amigo creada: 100 con prioridad: 3
+2025-10-29 08:31:03 [main] INFO  estructurasparcial4.Service.AlmacenamientoPerfiles - Buscando perfil: 013
+2025-10-29 08:31:03 [main] INFO  estructurasparcial4.Service.AlmacenamientoPerfiles - Perfil encontrado: 013
+2025-10-29 08:31:03 [main] INFO  estructurasparcial4.Model.SugerenciaAmigo - Creando sugerencia de amigo: 013
+2025-10-29 08:31:03 [main] INFO  estructurasparcial4.Model.SugerenciaAmigo - Sugerencia de amigo creada: 013 con prioridad: 3
+2025-10-29 08:31:03 [main] INFO  estructurasparcial4.Service.MotorSugerencias - Ordenando sugerencias por prioridad y nombre
+2025-10-29 08:31:03 [main] INFO  estructurasparcial4.Service.MotorSugerencias - Sugerencias generadas para 001: 3 sugerencias encontradas
+2025-10-29 08:31:03 [main] INFO  estructurasparcial4.App - Se mostraron 3 sugerencias para usuario: 001
+2025-10-29 08:32:10 [main] INFO  estructurasparcial4.App - Iniciando aplicación de Red Social
+2025-10-29 08:32:10 [main] INFO  estructurasparcial4.Service.AlmacenamientoPerfiles - Inicializando AlmacenamientoPerfiles
+2025-10-29 08:32:10 [main] INFO  estructurasparcial4.Service.AlmacenamientoPerfiles - AlmacenamientoPerfiles inicializado
+2025-10-29 08:32:10 [main] INFO  estructurasparcial4.Service.MotorSugerencias - Inicializando MotorSugerencias
+2025-10-29 08:32:10 [main] INFO  estructurasparcial4.Service.MotorSugerencias - MotorSugerencias inicializado
+2025-10-29 08:32:10 [main] INFO  estructurasparcial4.Service.LeerPerfiles - Leyendo el archivo de perfiles: C:\Users\david\Documents\GitHub\Parcial4\EstructurasParcial4\app\src\main\resources\Perfiles.json
+2025-10-29 08:32:10 [main] INFO  estructurasparcial4.Service.LeerPerfiles - Archivo de perfiles leído exitosamente. Perfiles encontrados: 13
+2025-10-29 08:32:10 [main] INFO  estructurasparcial4.Service.AlmacenamientoPerfiles - Intentando crear perfil
+2025-10-29 08:32:10 [main] INFO  estructurasparcial4.Service.AlmacenamientoPerfiles - Perfil creado exitosamente: 010
+2025-10-29 08:32:10 [main] INFO  estructurasparcial4.Service.AlmacenamientoPerfiles - Intentando crear perfil
+2025-10-29 08:32:10 [main] INFO  estructurasparcial4.Service.AlmacenamientoPerfiles - Perfil creado exitosamente: 001
+2025-10-29 08:32:10 [main] INFO  estructurasparcial4.Service.AlmacenamientoPerfiles - Intentando crear perfil
+2025-10-29 08:32:10 [main] INFO  estructurasparcial4.Service.AlmacenamientoPerfiles - Perfil creado exitosamente: 100
+2025-10-29 08:32:10 [main] INFO  estructurasparcial4.Service.AlmacenamientoPerfiles - Intentando crear perfil
+2025-10-29 08:32:10 [main] INFO  estructurasparcial4.Service.AlmacenamientoPerfiles - Perfil creado exitosamente: 111
+2025-10-29 08:32:10 [main] INFO  estructurasparcial4.Service.AlmacenamientoPerfiles - Intentando crear perfil
+2025-10-29 08:32:10 [main] INFO  estructurasparcial4.Service.AlmacenamientoPerfiles - Perfil creado exitosamente: 002
+2025-10-29 08:32:10 [main] INFO  estructurasparcial4.Service.AlmacenamientoPerfiles - Intentando crear perfil
+2025-10-29 08:32:10 [main] INFO  estructurasparcial4.Service.AlmacenamientoPerfiles - Perfil creado exitosamente: 013
+2025-10-29 08:32:10 [main] INFO  estructurasparcial4.Service.AlmacenamientoPerfiles - Intentando crear perfil
+2025-10-29 08:32:10 [main] INFO  estructurasparcial4.Service.AlmacenamientoPerfiles - Perfil creado exitosamente: 003
+2025-10-29 08:32:10 [main] INFO  estructurasparcial4.Service.AlmacenamientoPerfiles - Intentando crear perfil
+2025-10-29 08:32:10 [main] INFO  estructurasparcial4.Service.AlmacenamientoPerfiles - Perfil creado exitosamente: 004
+2025-10-29 08:32:10 [main] INFO  estructurasparcial4.Service.AlmacenamientoPerfiles - Intentando crear perfil
+2025-10-29 08:32:10 [main] INFO  estructurasparcial4.Service.AlmacenamientoPerfiles - Perfil creado exitosamente: 005
+2025-10-29 08:32:10 [main] INFO  estructurasparcial4.Service.AlmacenamientoPerfiles - Intentando crear perfil
+2025-10-29 08:32:10 [main] INFO  estructurasparcial4.Service.AlmacenamientoPerfiles - Perfil creado exitosamente: 006
+2025-10-29 08:32:10 [main] INFO  estructurasparcial4.Service.AlmacenamientoPerfiles - Intentando crear perfil
+2025-10-29 08:32:10 [main] INFO  estructurasparcial4.Service.AlmacenamientoPerfiles - Perfil creado exitosamente: 007
+2025-10-29 08:32:10 [main] INFO  estructurasparcial4.Service.AlmacenamientoPerfiles - Intentando crear perfil
+2025-10-29 08:32:10 [main] INFO  estructurasparcial4.Service.AlmacenamientoPerfiles - Perfil creado exitosamente: 008
+2025-10-29 08:32:10 [main] INFO  estructurasparcial4.Service.AlmacenamientoPerfiles - Intentando crear perfil
+2025-10-29 08:32:10 [main] INFO  estructurasparcial4.Service.AlmacenamientoPerfiles - Perfil creado exitosamente: 009
+2025-10-29 08:32:10 [main] INFO  estructurasparcial4.Service.LeerPerfiles - Perfiles cargados en almacenamiento: 13
+2025-10-29 08:32:10 [main] INFO  estructurasparcial4.Service.AlmacenamientoPerfiles - Obteniendo todos los perfiles
+2025-10-29 08:32:10 [main] INFO  estructurasparcial4.Service.AlmacenamientoPerfiles - Total de perfiles retornados: 13
+2025-10-29 08:32:10 [main] INFO  estructurasparcial4.Service.MotorSugerencias - Cargando lazos desde perfiles a la red social
+2025-10-29 08:32:10 [main] INFO  estructurasparcial4.Service.AlmacenamientoPerfiles - Obteniendo todos los perfiles
+2025-10-29 08:32:10 [main] INFO  estructurasparcial4.Service.AlmacenamientoPerfiles - Total de perfiles retornados: 13
+2025-10-29 08:32:10 [main] INFO  estructurasparcial4.Service.MotorSugerencias - Lazos cargados exitosamente: 5
+2025-10-29 08:32:10 [main] INFO  estructurasparcial4.Service.AlmacenamientoPerfiles - Obteniendo total de perfiles
+2025-10-29 08:32:10 [main] INFO  estructurasparcial4.Service.AlmacenamientoPerfiles - Total de perfiles: 13
+2025-10-29 08:32:10 [main] INFO  estructurasparcial4.Service.AlmacenamientoPerfiles - Obteniendo total de perfiles
+2025-10-29 08:32:10 [main] INFO  estructurasparcial4.Service.AlmacenamientoPerfiles - Total de perfiles: 13
+2025-10-29 08:32:10 [main] INFO  estructurasparcial4.App - Sistema inicializado con 13 perfiles
+2025-10-29 08:32:10 [main] INFO  estructurasparcial4.App - Mostrando menú principal
+2025-10-29 08:32:11 [main] INFO  estructurasparcial4.App - Opción seleccionada: 3
+2025-10-29 08:32:11 [main] INFO  estructurasparcial4.App - Visualizando red social completa
+2025-10-29 08:32:11 [main] INFO  estructurasparcial4.Service.AlmacenamientoPerfiles - Obteniendo todos los perfiles
+2025-10-29 08:32:11 [main] INFO  estructurasparcial4.Service.AlmacenamientoPerfiles - Total de perfiles retornados: 13
+2025-10-29 08:32:12 [main] INFO  estructurasparcial4.App - Red social visualizada exitosamente

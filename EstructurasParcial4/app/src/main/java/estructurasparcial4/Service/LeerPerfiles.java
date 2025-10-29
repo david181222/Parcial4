@@ -21,7 +21,7 @@ public class LeerPerfiles {
     // Clase encargada de leer y escribir el archivo JSON de perfiles.
     // Se usa para cargar perfiles al inicio y guardarlos cuando cambian.
     private final Gson gson;
-    private static final String RUTA_ARCHIVO = "C:\\Users\\diazm\\OneDrive\\Escritorio\\Parcial4\\EstructurasParcial4\\app\\src\\main\\resources\\Perfiles.json";
+    private static final String RUTA_ARCHIVO = "C:\\Users\\david\\Documents\\GitHub\\Parcial4\\EstructurasParcial4\\app\\src\\main\\resources\\Perfiles.json";
     private List<Perfil> perfilesCargados;
     private boolean archivoLeido;
     private static final Logger logger = LogManager.getLogger(LeerPerfiles.class);

@@ -4,7 +4,11 @@
     "nombre": "Erling Haaland",
     "edad": 25,
     "genero": "Masculino",
-    "amigosDirectos": {}
+    "amigosDirectos": {
+      "001": 3,
+      "100": 5,
+      "013": 4
+    }
   },
   {
     "id": "001",
@@ -12,7 +16,8 @@
     "edad": 38,
     "genero": "Masculino",
     "amigosDirectos": {
-      "002": 4
+      "002": 4,
+      "010": 3
     }
   },
   {
@@ -20,7 +25,9 @@
     "nombre": "Zinedine Zidane",
     "edad": 53,
     "genero": "Masculino",
-    "amigosDirectos": {}
+    "amigosDirectos": {
+      "010": 5
+    }
   },
   {
     "id": "111",
@@ -44,7 +51,9 @@
     "nombre": "Ousmane Dembele",
     "edad": 15,
     "genero": "Masculino",
-    "amigosDirectos": {}
+    "amigosDirectos": {
+      "010": 4
+    }
   },
   {
     "id": "003",
